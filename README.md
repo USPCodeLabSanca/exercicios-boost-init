@@ -9,13 +9,18 @@ Isso será um meio para começar a utilizar e entender o funcionamento do Git. P
 ### Instalando o Git
 
 - Baixe o Git neste <a href="https://git-scm.com/downloads">site</a>.
-- Configure o seu Git, conferindo os slides sobre git <a href="https://tinyurl.com/slide-git01">aqui</a>.
+- Configure o seu Git abrindo o Git Bash e nele digitando esses dois comandos:
+```
+    git config --global user.name $SEU_USERNAME
+    git config --global user.email $SEU_EMAIL
+```
+- Caso tenha quaisquer dúvidas sobre Git, confira <a href="https://tinyurl.com/slide-git01">esses slides</a>
 
 ### Instalando o Node
 Para este passo, é recomendado que se utilize um **Node Version Manager** para instalar o Node e o npm. Um exemplo é o ```nvm```:
 
 - Instalação para <a href="https://learn.microsoft.com/pt-br/windows/dev-environment/javascript/nodejs-on-windows">Windows</a>
-- Instalação para Linux <a href="https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/">Linux</a>
+- Instalação para <a href="https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/">Linux</a>
 
 ## Setup do repositório na sua máquina
 
@@ -30,25 +35,66 @@ cd repos
 ```
 Em seguida, crie um novo diretório com o seu nome:
 ```
-mkdir *SEU-NOME*
+mkdir *SEU-NOME-COMPLETO*
 ```
 Este será o seu diretório dentro deste repositório, portanto, faça as alterações apenas nele!
 
 ## Como criar Branches, e realizar Commits, Pushs e PRs?
+
+💡 Essa seção é importantíssima para que, em projetos futuros, possamos trabalhar em equipe, com cada um realizando suas alterações simultaneamente no repositório sem ~muitos~ conflitos
+
 ### Criando uma Branch
-Será necessário realizar este passo **apenas 1 vez**. Isso porque, com isso, você criará uma versão diferente do repositório.
 
+Será necessário realizar este passo **apenas 1 vez**. Isso porque, com isso, você criará uma versão diferente do repositório. Rode o seguinte comando para criar sua branch (escolha um nome que seja improvável de se repetir)
 ```
-git checkout -b repo/*SEU-NOME*
+git checkout -b repo/*NOME-DA-SUA-BRANCH*
 ```
+O comando ```checkout``` serve para mudar de branch. Com a adição do ```-b```, o comando cria uma branch nova para você utilizar, e já entra nele. 
 
+Agora, verifique se você está na branch correta utilizando o comando:
 ```
 git branch
 ```
 
+Ele deve retornar algo nesse formato:
 ```
-* repo/*SEU-NOME*
+* repo/*NOME-DA-SUA-BRANCH*
 main
 ```
 
-TBD
+E pronto! Agora você já pode começar a codar!
+
+### Desenvolvendo seu código, realizando commits e mandando para a sua branch
+
+Antes de desenvolver seu código, é interessante sempre rodar o seguinte comando:
+```
+git pull origin main
+```
+💡 Esse passo é necessário para que você sempre tenha os conteúdos e arquivos atualizados (em relação à branch ```main``` deste repositório remoto) no seu repositório local.
+
+Faça suas alterações, e adicione os arquivos que você quer mandar para a sua branch, no repositório remoto, com o seguinte comando:
+```
+git add <arquivos>
+```
+
+Faça um commit na sua branch do **repositório local** com o seguinte comando:
+```
+git commit -m "breve descrição das alterações"
+```
+
+Para enviar as alterações na sua branch do **repositório remoto**, você deve rodar o seguinte comando:
+```
+git push origin repo/*NOME-DA-SUA-BRANCH*
+```
+💡 Isso é um exercício muito legal para que você se familiarize mais com o Git. Pode ser que atualmente não faça muito sentido, mas com o tempo você pegará o significado de cada passo.
+
+### Abrindo uma Pull Request para a Main
+
+Com tudo pronto, vá até a página do repositório no github, vá para a aba ```Pull Requests``` e crie uma PR nova. Ao criar, garanta que você esteja puxando a sua branch para a main, nesse formato:
+```
+main <- repo/*NOME-DA-SUA-BRANCH*
+```
+
+Ao terminar, um dos coordenadores poderá aprovar sua PR, e então, as alterações que você fez na sua branch será passada para a main. 
+
+💡 Esse passo pode parecer meio desnecessário, mas saiba que é um recurso importante que você aprenderá para o futuro.

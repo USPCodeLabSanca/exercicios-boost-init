@@ -11,8 +11,8 @@ Isso será um meio para começar a utilizar e entender o funcionamento do Git. P
 - Baixe o Git neste <a href="https://git-scm.com/downloads">site</a>.
 - Configure o seu Git abrindo o Git Bash e nele digitando esses dois comandos:
 ```
-    git config --global user.name $SEU_USERNAME
-    git config --global user.email $SEU_EMAIL
+    git config --global user.name <seu_username>
+    git config --global user.email <seu_email>
 ```
 - Caso tenha quaisquer dúvidas sobre Git, confira <a href="https://tinyurl.com/slide-git01">esses slides</a>
 
@@ -35,9 +35,9 @@ cd repos
 ```
 Em seguida, crie um novo diretório com o seu nome:
 ```
-mkdir *SEU-NOME-COMPLETO*
+mkdir <seu-nome-completo>
 ```
-Este será o seu diretório dentro deste repositório, portanto, faça as alterações apenas nele!
+Este será o seu diretório dentro deste repositório para você se organizar e manter suas resoluções de exercícios do jeito que você achar melhor, portanto, faça as alterações apenas nele! 
 
 ## Como criar Branches, e realizar Commits, Pushs e PRs?
 
@@ -47,7 +47,7 @@ Este será o seu diretório dentro deste repositório, portanto, faça as altera
 
 Será necessário realizar este passo **apenas 1 vez**. Isso porque, com isso, você criará uma versão diferente do repositório. Rode o seguinte comando para criar sua branch (escolha um nome que seja improvável de se repetir)
 ```
-git checkout -b repo/*NOME-DA-SUA-BRANCH*
+git checkout -b repo/<nome-da-sua-branch>
 ```
 O comando ```checkout``` serve para mudar de branch. Com a adição do ```-b```, o comando cria uma branch nova para você utilizar, e já entra nele. 
 
@@ -58,7 +58,7 @@ git branch
 
 Ele deve retornar algo nesse formato:
 ```
-* repo/*NOME-DA-SUA-BRANCH*
+* repo/<nome-da-sua-branch>
 main
 ```
 
@@ -84,7 +84,7 @@ git commit -m "breve descrição das alterações"
 
 Para enviar as alterações na sua branch do **repositório remoto**, você deve rodar o seguinte comando:
 ```
-git push origin repo/*NOME-DA-SUA-BRANCH*
+git push origin repo/<nome-da-sua-branch>
 ```
 💡 Isso é um exercício muito legal para que você se familiarize mais com o Git. Pode ser que atualmente não faça muito sentido, mas com o tempo você pegará o significado de cada passo.
 
@@ -92,7 +92,7 @@ git push origin repo/*NOME-DA-SUA-BRANCH*
 
 Com tudo pronto, vá até a página do repositório no github, vá para a aba ```Pull Requests``` e crie uma PR nova. Ao criar, garanta que você esteja puxando a sua branch para a main, nesse formato:
 ```
-main <- repo/*NOME-DA-SUA-BRANCH*
+main <- repo/<nome-da-sua-branch>
 ```
 
 Ao terminar, um dos coordenadores poderá aprovar sua PR, e então, as alterações que você fez na sua branch será passada para a main. 

@@ -1,12 +1,12 @@
 # Introdução ao React e JSX
 
 ## Objetivo
-Se introduzir ao mundo do React, aprendendo a criar um projeto React utilizando o ```create-react-app``` e a construir componentes funcionais simples utilizando o JSX e TSX.
+Se introduzir ao mundo do React, aprendendo a criar um projeto React utilizando o `create-react-app` e a construir componentes funcionais simples utilizando o JSX e TSX.
 
 ## Tópicos
 - O que é React?
 - O que é JSX?
-- Como criar um projeto com ```create-react-app```
+- Como criar um projeto com `create-react-app`
 - Componentes Funcionais
 - O que é TSX?
 - Exercício da Semana
@@ -26,9 +26,9 @@ const element = <h1>Hello world!</h1>;
 ```
 No código acima, o JSX se parece com HTML, mas é convertido para JavaScript puro durante a execução. A vantagem é que você pode misturar lógica JavaScript diretamente dentro da estrutura HTML.
 
-### Como criar um projeto com ```create-react-app```:
+### Como criar um projeto com `create-react-app`:
 
-Dado que você já instalou o ```nvm``` e já pode utilizar o ```node``` e ```npm```, você criará o seu primeiro (ou não) projeto de React! Para criá-lo, existem algumas formas diferentes. Aqui, vamos testar o ```create-react-app```, que é uma ferramenta de linha de comando que configura automaticamente um projeto React com tudo o que você precisa para começar a programar sem se preocupar com configurações complicadas de build ou dependências.
+Dado que você já instalou o `nvm` e já pode utilizar o `node` e `npm`, você criará o seu primeiro (ou não) projeto de React! Para criá-lo, existem algumas formas diferentes. Aqui, vamos testar o `create-react-app`, que é uma ferramenta de linha de comando que configura automaticamente um projeto React com tudo o que você precisa para começar a programar sem se preocupar com configurações complicadas de build ou dependências.
 
 Passos para criar um novo projeto:
 1. Abra o terminal.
@@ -48,7 +48,7 @@ npm start
 Isso abrirá o aplicativo em `http://localhost:3000`, onde você poderá ver a página inicial do React.
 
 ### Componentes Funcionais
-No React, um componente é uma parte da interface do usuário. Componentes funcionais são a maneira mais simples de criar componentes no React, usando funções JavaScript.
+No React, um componente é uma parte da interface do usuário. Componentes funcionais são a maneira mais simples de criar componentes no React, usando funções JavaScript. Com componentes, conseguimos modularizar e reutilizar melhor o código, aumentando a escalabilidade e facilitando o entendimento do código.
 
 #### Estrutura básica de um componente funcional:
 ```jsx
@@ -74,7 +74,18 @@ function Welcome(props) {
 TSX é a versão do JSX usada em projetos React com TypeScript. Assim como o JSX, ele permite escrever HTML dentro do JavaScript, mas com a vantagem de contar com tipagem estática fornecida pelo TypeScript. Isso ajuda a prevenir erros, garantindo que as propriedades e tipos de dados sejam verificados em tempo de compilação.
 Exemplo de TSX:
 ```tsx
-type WelcomeProps = {
+interface WelcomeProps {
+  nome: string;
+};
+
+function Welcome(props: WelcomeProps) {
+  return <h1>Olá, { props.nome }!</h1>;
+}
+```
+Você também pode reescrever o código acima, sem diferença alguma (note a diferença no argumento da função!). Você pode optar por qualquer uma das formas.
+
+```tsx
+interface WelcomeProps {
   nome: string;
 };
 

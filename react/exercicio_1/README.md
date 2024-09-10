@@ -1,4 +1,4 @@
-# Introdução ao React e JSX/TSX
+# Introdução ao React e JSX
 
 ## Objetivo
 Se introduzir ao mundo do React, aprendendo a criar um projeto React utilizando o ```create-react-app``` e a construir componentes funcionais simples utilizando o JSX e TSX.
@@ -22,7 +22,7 @@ Vantagens do React:
 JSX (JavaScript XML) é uma extensão de sintaxe do JavaScript usada no React. Ele permite escrever HTML dentro do código JavaScript de forma mais legível e intuitiva. Em vez de usar funções JavaScript convencionais para criar elementos HTML, com JSX você pode combinar as duas linguagens.
 Exemplo de JSX:
 ```jsx
-const element = <h1>Hellom world!</h1>;
+const element = <h1>Hello world!</h1>;
 ```
 No código acima, o JSX se parece com HTML, mas é convertido para JavaScript puro durante a execução. A vantagem é que você pode misturar lógica JavaScript diretamente dentro da estrutura HTML.
 
@@ -34,11 +34,11 @@ Passos para criar um novo projeto:
 1. Abra o terminal.
 2. Execute o seguinte comando para criar o projeto:
 ```
-npx create-react-app meu-projeto
+npx create-react-app meu-app --template typescript
 ```
 3. Navegue até o diretório do projeto:
 ```
-cd meu-projeto
+cd meu-app
 ```
 4. Inicie o servidor de desenvolvimento:
 ```
@@ -86,7 +86,8 @@ Nesse exemplo, o TypeScript define o tipo do prop nome como uma string, e qualqu
 
 ### Exercício da Semana
 - Criar um componente funcional `App` que exiba "Hello, World!" no navegador.
-- Personalizar o componente `App` para exibir uma mensagem de boas-vindas dinâmica, como "Olá, [nome]!" usando props.
+- Personalizar o componente `App` para exibir uma mensagem de boas-vindas dinâmica, como "Olá, [nome]!" usando props em TypeScript.
+
 #### Desafios
 1. Criar múltiplos componentes, como um `Header` e um `Footer`, e importá-los no componente principal `App`.
 2. Alterar o conteúdo exibido dinamicamente utilizando props nos componentes filhos.

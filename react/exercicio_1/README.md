@@ -1,13 +1,14 @@
-# Introdução ao React e JSX
+# Introdução ao React e JSX/TSX
 
 ## Objetivo
-Se introduzir ao mundo do React, aprendendo a criar um projeto React utilizando o ```create-react-app``` e a construir componentes funcionais simples utilizando o JSX.
+Se introduzir ao mundo do React, aprendendo a criar um projeto React utilizando o ```create-react-app``` e a construir componentes funcionais simples utilizando o JSX e TSX.
 
 ## Tópicos
 - O que é React?
 - O que é JSX?
 - Como criar um projeto com ```create-react-app```
 - Componentes Funcionais
+- O que é TSX?
 - Exercício da Semana
 
 ### O que é React?
@@ -35,11 +36,11 @@ Passos para criar um novo projeto:
 ```
 npx create-react-app meu-projeto
 ```
-4. Navegue até o diretório do projeto:
+3. Navegue até o diretório do projeto:
 ```
 cd meu-projeto
 ```
-6. Inicie o servidor de desenvolvimento:
+4. Inicie o servidor de desenvolvimento:
 ```
 npm start
 ```
@@ -68,6 +69,20 @@ function Welcome(props) {
   return <h1>Olá, {props.nome}!</h1>;
 }
 ```
+
+### O que é TSX?
+TSX é a versão do JSX usada em projetos React com TypeScript. Assim como o JSX, ele permite escrever HTML dentro do JavaScript, mas com a vantagem de contar com tipagem estática fornecida pelo TypeScript. Isso ajuda a prevenir erros, garantindo que as propriedades e tipos de dados sejam verificados em tempo de compilação.
+Exemplo de TSX:
+```tsx
+type WelcomeProps = {
+  nome: string;
+};
+
+function Welcome({ nome }: WelcomeProps) {
+  return <h1>Olá, {nome}!</h1>;
+}
+```
+Nesse exemplo, o TypeScript define o tipo do prop nome como uma string, e qualquer uso incorreto será detectado. TSX é ideal para projetos maiores e mais complexos, pois melhora a manutenção e a robustez do código.
 
 ### Exercício da Semana
 - Criar um componente funcional `App` que exiba "Hello, World!" no navegador.

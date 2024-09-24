@@ -1,10 +1,9 @@
 import './App.css';
+import BoasVindas from './Components/BoasVindas/BoasVindas';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <BoasVindas nome='Miguel' idade={19}/>
   );
 }
 

@@ -1,1 +1,0 @@
-// esse arquivo seria para criar uma página de exemplo!

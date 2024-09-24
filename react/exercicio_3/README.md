@@ -1,9 +1,15 @@
-### Semana 3: Introdução ao `useState` e Manipulação de Eventos
+# Introdução ao `useState` e Manipulação de Eventos
 
-**Objetivo da Semana:**  
+## Objetivo  
 Nesta semana, vamos mergulhar no hook `useState`, que é fundamental para gerenciar o estado em componentes funcionais do React. Também exploraremos como trabalhar com eventos, como cliques de botões e entradas de texto, para criar interfaces dinâmicas e interativas.
 
-#### O que é o `useState`?
+## Tópicos
+- O que é o `useState`?
+- Exemplo Simples com `useState`: Contador
+- Eventos em Componentes React
+- Exemplo de Manipulação de Eventos com `onChange`: Campo de Texto
+
+### O que é o `useState`?
 
 O `useState` é um hook do React que permite adicionar estado a componentes funcionais. Antes dos hooks, o estado só era possível em componentes de classe, mas agora qualquer componente funcional pode armazenar e atualizar dados internamente.
 
@@ -22,7 +28,7 @@ const [state, setState] = useState(initialValue);
 - `setState`: uma função para atualizar o estado.
 - `initialValue`: o valor inicial que o estado terá ao renderizar o componente pela primeira vez.
 
-#### Exemplo Simples com `useState`: Contador
+### Exemplo Simples com `useState`: Contador
 
 Aqui está um exemplo de como usar o `useState` para criar um simples contador. O componente exibirá um número na tela e um botão para incrementar esse número.
 
@@ -52,7 +58,7 @@ export default Contador;
 2. **Função `increment`**: Criamos uma função que usa `setCount` para aumentar o valor do estado `count` em 1 sempre que o botão é clicado.
 3. **Evento `onClick`**: No JSX, adicionamos o evento `onClick` ao botão para chamar a função `increment` quando o usuário clicar.
 
-#### Eventos em Componentes React
+### Eventos em Componentes React
 
 Os eventos em React são semelhantes aos eventos do DOM padrão, mas com algumas diferenças na sintaxe. Em vez de usar nomes em minúsculas como `onclick`, usamos **camelCase** para declarar eventos, como `onClick`.
 
@@ -61,7 +67,7 @@ Alguns dos eventos mais comuns incluem:
 - `onChange`: Usado para capturar mudanças em elementos de formulário, como campos de texto.
 - `onSubmit`: Disparado ao submeter um formulário.
 
-#### Exemplo de Manipulação de Eventos com `onChange`: Campo de Texto
+### Exemplo de Manipulação de Eventos com `onChange`: Campo de Texto
 
 Agora, vamos criar um exemplo onde usamos o evento `onChange` para capturar o valor de um campo de texto e atualizar o estado em tempo real.
 
@@ -91,7 +97,7 @@ export default InputTexto;
 2. **Função `handleChange`**: Essa função é chamada sempre que o conteúdo do campo de texto muda. Usamos `setText` para atualizar o estado com o valor digitado pelo usuário, acessível via `event.target.value`.
 3. **Evento `onChange`**: No JSX, vinculamos o evento `onChange` ao input, para que o estado seja atualizado a cada mudança no campo de texto.
 
-#### Desafios da Semana:
+### Desafios da Semana
 
 1. **Criar um Componente de "To-Do List" Simples:**
    - Use o `useState` para gerenciar uma lista de tarefas.
@@ -135,7 +141,7 @@ export default InputTexto;
 
 ---
 
-### Resumo dos Conceitos:
+#### Resumo dos Conceitos:
 - O **`useState`** é usado para armazenar e atualizar o estado em componentes funcionais.
 - Estados são imutáveis, ou seja, para atualizá-los, usamos funções como `setState` (por exemplo, `setCount`).
 - Eventos como **`onClick`** e **`onChange`** permitem a interação do usuário com a interface, capturando ações como cliques e alterações de texto.

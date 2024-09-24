@@ -1,4 +1,5 @@
 import './Card.css';
+import Input from '../Input/Input';
 
 interface CardProps {
   title: string;
@@ -13,6 +14,7 @@ function Card({ title, content, image }: CardProps) {
         <div className='card'>
           <h2 className='card--title'>{title}</h2>
           <p className='card--content'>{content}</p>
+          <Input />
           {image && <img className='card--img' src={image} alt={title} />}
         </div>
       </div>

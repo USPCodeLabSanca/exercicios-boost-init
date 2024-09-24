@@ -28,7 +28,7 @@ Ao criar componentes em TypeScript, a principal diferença em relação ao JavaS
 1. **Definição de Tipos de Props**: É recomendável tipar os props de um componente para garantir que os dados recebidos sejam do tipo esperado. Isso previne erros comuns, como passar o tipo errado para um componente e ajuda a tornar o código mais legível.
 
 ```tsx
-type CardProps = {
+interface CardProps {
   title: string;
   description: string;
   imageUrl: string;
@@ -49,7 +49,7 @@ Aqui, definimos o tipo `CardProps` que especifica que `title`, `description` e `
 2. **Componentes com Props Opcionais**: Nem sempre todos os props são obrigatórios. Em TypeScript, você pode tornar certos props opcionais usando o operador `?`.
 
 ```tsx
-type CardProps = {
+interface CardProps {
   title: string;
   description: string;
   imageUrl?: string; // Este prop é opcional
@@ -104,7 +104,7 @@ function Button() {
 
 Em Typescript, se você estiver passando funções como props, também pode tipá-las corretamente.
 ```tsx
-type ButtonProps = {
+interface ButtonProps {
   onClick: () => void;
 };
 

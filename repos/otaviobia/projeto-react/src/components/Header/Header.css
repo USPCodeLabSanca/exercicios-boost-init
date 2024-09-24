@@ -1,0 +1,33 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #384B70;
+  color: #FCFAEE;
+}
+
+.Logo {
+  line-height: 2rem;
+}
+
+.Pages {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.PageButton {
+  border-radius: 0.6rem;
+  font-size: 1.25rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  margin-left: 1rem;
+  color: #FCFAEE;
+  text-decoration: none;
+}
+
+.PageButton:hover {
+  background-color: #ffffff10;
+}

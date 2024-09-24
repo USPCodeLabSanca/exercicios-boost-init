@@ -1,0 +1,67 @@
+.Product {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ProductBottom {
+  padding: 0.5rem;
+}
+
+.ImageDiv {
+  position: relative;
+}
+
+.ProductName {
+  font-size: 1.6rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.PriceDiv {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.ProductImage {
+  object-fit: cover;
+  aspect-ratio: 1;
+  height: 20rem;
+  width: 100%;
+}
+
+.PriceCut {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: #707070;
+}
+
+.ProductPrice {
+  font-size: 1.2rem;
+}
+
+.SaleIcon {
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 6rem;
+}
+
+.ProductBuy {
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #B8001F;
+  padding: 0.3rem 0.7rem;
+}
+
+.ProductBuy:hover {
+  background-color: #e80027;
+}

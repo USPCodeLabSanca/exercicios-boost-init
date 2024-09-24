@@ -2,6 +2,7 @@
   0. Disallow horizontal scrolling
 */
 html, body {
+  font-family: Helvetica;
   max-width: 100%;
   overflow-x: hidden;
 }

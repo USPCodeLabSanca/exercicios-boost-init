@@ -190,7 +190,7 @@ return <input ref={inputRef} />;
    - Crie um componente que faz uma busca em uma API e exibe os dados recebidos.
    - Desafio: Adicionar um botão de "Atualizar" que faz uma nova requisição ao clicar.
 
-2. **Criar um Temporizador com `useEffect` e Limpeza de Efeitos:**
+2. **Criar um Temporizador com `useEffect`**
    - Implemente um temporizador que inicia automaticamente quando o componente é renderizado e conta os segundos.
    - Desafio: Adicionar um botão "Parar" que limpa o temporizador.
 

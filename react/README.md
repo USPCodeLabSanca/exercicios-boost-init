@@ -10,8 +10,8 @@ O cronograma das atividades é listado a seguir (com possibilidade de mudança c
 
 ### Semana 1 (10/09): Introdução ao React e JSX
 ### Semana 2 (17/09): Componentes, Props e Reutilização
-### Semana 3 (24/09): Estado com ```useState```
-### Semana 4 (01/10): Ciclo de vida com ```useEffect```
+### Semana 3 (24/09): Introdução ao `useState` e Manipulação de Eventos
+### Semana 4 (01/10): Introdução ao `useEffect`, Escopo e Outros Hooks
 ### Semana 5 (08/10): Listas e Condicionais
 ### Semana 6 (15/10): Formulários e Controle de Inputs
 ### Semana 7 (22/10): Comunicação com APIs e Fetching de Dados

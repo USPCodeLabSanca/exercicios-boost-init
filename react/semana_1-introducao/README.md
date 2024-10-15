@@ -4,12 +4,13 @@
 Se introduzir ao mundo do React, aprendendo a criar um projeto React utilizando o `create-react-app` e a construir componentes funcionais simples utilizando o JSX e TSX.
 
 ## Tópicos
-- O que é React?
-- O que é JSX?
-- Como criar um projeto com `create-react-app`
-- Componentes Funcionais
-- O que é TSX?
-- Exercício da Semana
+- [O que é React?](#o-que-é-react)
+- [O que é JSX?](#o-que-é-jsx)
+- [Como criar um projeto com `create-react-app`](#como-criar-um-projeto-com-create-react-app)
+- [Componentes Funcionais](#componentes-funcionais)
+- [O que é TSX?](#o-que-é-tsx)
+- [Exercício da Semana](#exercício-da-semana)
+---
 
 ### O que é React?
 React é uma biblioteca JavaScript criada pelo Facebook em 2013, projetada para construir interfaces de usuário (UI) de maneira eficiente e escalável. Ele permite criar aplicativos web dinâmicos e interativos com facilidade, reutilizando componentes e otimizando o desempenho. A principal característica do React é sua abordagem declarativa, onde você descreve como a interface deve parecer em diferentes estados e o React se encarrega de atualizar a tela quando o estado muda.

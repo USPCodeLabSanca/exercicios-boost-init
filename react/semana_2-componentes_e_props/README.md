@@ -4,11 +4,12 @@
 Criar *componentes* mais complexos e reutilizáveis no React, e entender melhor o conceito de *props*. 
 
 ## Tópicos
-- O que são Props?
-- Tipagem de Props com Typescript
-- Eventos em Componentes: `onClick`
-- Componente Completo em React e Typescript
-- Exercício da Semana
+- [O que são Props?](#o-que-são-props)
+- [Tipagem de Props com Typescript](#tipagem-de-props-com-typescript)
+- [Eventos em Componentes: `onClick`](#eventos-em-componentes-onclick)
+- [Componente Completo em React e Typescript](#componente-completo-em-react-e-typescript)
+- [Exercício da Semana](#exercício-da-semana)
+---
 
 ### O que são Props?
 

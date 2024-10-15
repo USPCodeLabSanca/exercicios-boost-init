@@ -4,10 +4,11 @@
 Nesta semana, vamos mergulhar no hook `useState`, que é fundamental para gerenciar o estado em componentes funcionais do React. Também exploraremos como trabalhar com eventos, como cliques de botões e entradas de texto, para criar interfaces dinâmicas e interativas.
 
 ## Tópicos
-- O que é o `useState`?
-- Exemplo Simples com `useState`: Contador
-- Eventos em Componentes React
-- Exemplo de Manipulação de Eventos com `onChange`: Campo de Texto
+- [O que é o `useState`?](#o-que-é-o-usestate)
+- [Exemplo Simples com `useState`: Contador](#exemplo-simples-com-usestate-contador)
+- [Eventos em Componentes React](#eventos-em-componentes-react)
+- [Exemplo de Manipulação de Eventos com `onChange`: Campo de Texto](#exemplo-de-manipulação-de-eventos-com-onchange-campo-de-texto)
+---
 
 ### O que é o `useState`?
 

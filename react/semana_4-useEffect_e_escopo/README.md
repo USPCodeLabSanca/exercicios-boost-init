@@ -4,9 +4,9 @@
 Nesta semana, vamos explorar o hook `useEffect`, que permite a execução de efeitos colaterais em componentes React. Vamos aprender a usá-lo para interagir com APIs, manipular o DOM, e executar lógica após o render. Além disso, discutiremos o escopo em componentes React e faremos uma introdução breve a outros hooks importantes.
 
 ## Tópicos
-- O que é o `useEffect`?
-- Escopo em Componentes React
-- Outros Hooks do React
+- [O que é o `useEffect`?](#o-que-é-o-useeffect)
+- [Escopo em Componentes React](#escopo-em-componentes-react)
+- [Outros Hooks do React](#outros-hooks-do-react)
 ---
 
 ### O que é o `useEffect`?

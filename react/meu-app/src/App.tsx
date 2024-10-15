@@ -17,8 +17,8 @@ function App() {
     <div className="App">
       <ApiFetcher></ApiFetcher>
       <MyComponent name='shogo' onClick={() => handleClick('shogo')}></MyComponent>
-      <Card title='titulo' content='conteudo do primeiro card'></Card>
-      <Card title='titulo' content='conteudo do segundo card' image={logo}></Card>
+      <Card title='titulo' content='conteudo do primeiro card' valorInicial='valor 1'></Card>
+      <Card title='titulo' content='conteudo do segundo card' image={logo} valorInicial='valor 2'></Card>
       <Input></Input>
     </div>
   );
